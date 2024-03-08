@@ -1,4 +1,4 @@
-setTimeout(() => {
+
     var decodeEntities = (function() {
         // this prevents any overhead from creating the object each time
         var element = document.createElement('div');
@@ -41,4 +41,3 @@ setTimeout(() => {
             .insertAfter($(this).find('div:eq(3)'));
         } 
     });
-}, 5000);
