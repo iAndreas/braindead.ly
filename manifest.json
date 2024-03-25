@@ -1,0 +1,13 @@
+   {
+      "name": "braindead.ly",
+      "version": "1.0",
+      "manifest_version": 3,
+      "content_scripts": [
+        {
+          "matches": [
+            "https://brainly.com.br/tarefa/*"
+          ],
+          "js": ["jquery.js", "background.js"]
+        }
+      ]
+    }
