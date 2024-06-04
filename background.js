@@ -31,7 +31,8 @@ setTimeout(() => {
     $('[data-testid="unlock_section_wrapper"]').remove()
     $('[data-testid="answer_box_below_blockade"]').remove()
     $(".brn-qpage-next-dummy-unlock-section__button-wrapper").parent().remove();
-    $('[data-testid="answer_box_content"]').parent().removeClass('AnswerBoxLayout-module__contentBlocked--MdVKu AnswerBoxLayout-module__contentGradient--QQZqs');
+    $('[data-testid="answer_box_content"]').parent().removeClass();
+    $('[data-testid="answer_box_content"]').parent().css("grid-area", "content");
     
     $('[data-testid="answer_box_wrapper"]').each(function(i) {
         if($(this).find('[data-testid="answer_box_text"]').length) { 
